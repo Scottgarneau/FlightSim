@@ -118,29 +118,10 @@
         </div>
       </div>
     </div>
-
+    <script src="theme.js"></script>
+    <script src="connection.js"></script>
+    <script src="features.js"></script>
+    <script src="chart.js"></script>
     <script src="index.js"></script>
-
-    <script>
-      // Paste your JavaScript code for the transition animation here
-      document.addEventListener("DOMContentLoaded", function () {
-        console.log("DOM content loaded.");
-
-        changeTheme("Neon");
-
-        // Add this code to add the 'animate' class once the DOM content is loaded
-        var containerWrapper = document.querySelector(".container-wrapper");
-        console.log(containerWrapper); // Check if .container-wrapper element is found
-
-        // Remove 'animate' class if it exists
-        containerWrapper.classList.remove("animate");
-
-        // Trigger reflow before adding the class again
-        containerWrapper.offsetWidth; // This line forces the browser to reflow the element
-
-        containerWrapper.classList.add("animate");
-        console.log("Animate class added"); // Confirm if the class is added
-      });
-    </script>
   </body>
 </html>
